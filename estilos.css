@@ -1,0 +1,100 @@
+html {
+    background-color: rgb(232, 161, 173);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul > li {
+    font-size: 18px;
+}
+
+ol > li {
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgb(158, 52, 52);
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+nav {
+    background-color: rgb(211, 92, 92);
+    padding: 30px;
+    margin: 0px 30px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 20px;
+}
+
+section {
+    background-color: rgb(223, 196, 248);
+    padding: 30px;
+    margin: 0px 30px;
+}
+
+aside {
+    background-color: rgb(173, 224, 224);
+    padding: 30px;
+    margin: 0 30px;
+}
+
+footer {
+    background-color: rgb(61, 58, 58);
+    padding: 30px;
+    margin: 0 30px;
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer h2 {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+#wsp_foto {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    cursor: pointer;
+}
