@@ -45,11 +45,16 @@ nav {
     margin: 0px 30px;
     text-align: center;
     font-family: "roboto";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
     margin: 0 20px;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 section {
@@ -65,9 +70,16 @@ section {
     justify-content: center;
 }
 
+
 .section-video {
     display: flex;
     justify-content: center;
+}
+
+
+.section-video iframe {
+    width: 70vw;
+    height: 50vh;
 }
 
 .section-mapa {
@@ -103,8 +115,6 @@ aside {
     width: 50%;
     height: 50%;
 }
-
-
 
 
 
@@ -171,6 +181,7 @@ footer h2 {
 .contenedor-logos {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contenedor-logos img {
@@ -182,7 +193,7 @@ footer h2 {
 
 .contenedor-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     place-items: center;
     flex-wrap: wrap;
 }
@@ -196,12 +207,17 @@ footer h2 {
 .footer-redes {
     font-family: roboto;
     display: flex;
+    width: 100%;
+    margin: 30px 0;
 }
 
+
 .footer-parrafo {
-    width: 30%;
     font-family: roboto;
+    width: 50%;
+    text-align: left;
 }
+
 
 .footer-parrafo span {
     color: #fff;
