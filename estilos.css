@@ -12,26 +12,21 @@ h3 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 ul > li {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 ol > li {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 h1, h2 {
     text-align: center;
 }
 
-img {
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-}
 
 h1, h2, h3 {
     text-decoration: underline;
@@ -41,6 +36,7 @@ header {
     background-color: rgb(25, 24, 24);
     padding: 10px;
     margin: 0px 30px;
+    font-family: "roboto";
 }
 
 nav {
@@ -48,6 +44,7 @@ nav {
     padding: 30px;
     margin: 0px 30px;
     text-align: center;
+    font-family: "roboto";
 }
 
 nav a {
@@ -60,6 +57,7 @@ section {
     padding: 30px;
     margin: 0px 30px;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section-tutorial, h3 {
@@ -77,11 +75,16 @@ section {
     justify-content: center;
 }
 
+.section-mapa iframe {
+    width: 70vw;
+    height: 50vh;
+}
 
 aside {
     background-color: rgb(93, 99, 99);
     padding: 30px;
     margin: 0 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .aside-receta {
@@ -89,10 +92,21 @@ aside {
     justify-content: center;
 }
 
-.aside-receta img {
+.aside-imagen {
     display: flex;
-    border-radius: 10px;
+    flex-direction: column;
 }
+.aside-imagen img {
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
 
 .aside-receta ul {
     display: flex;
@@ -108,7 +122,7 @@ footer {
 
 footer a {
     color: white;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin: 0px 10px;
 }
 
@@ -137,8 +151,9 @@ footer h2 {
     display: flex;
     justify-items: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 40px;
 }
 
 .contenedor-header h1 {
@@ -167,7 +182,7 @@ footer h2 {
 
 .contenedor-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     place-items: center;
     flex-wrap: wrap;
 }
@@ -179,13 +194,22 @@ footer h2 {
 }
 
 .footer-redes {
+    font-family: roboto;
     display: flex;
 }
 
 .footer-parrafo {
     width: 30%;
+    font-family: roboto;
 }
 
 .footer-parrafo span {
     color: #fff;
 }
+
+
+@font-face {
+    font-family: "roboto";
+    src: url(./fuentes/roboto.ttf);
+}
+
