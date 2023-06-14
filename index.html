@@ -11,9 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <title>Receta Española</title>
+    <script>
+    alert("Bienvenido a la página en la cual te enseñaremos a hacer una tortilla de papas y demás recetas relacionadas con la cultura gastronómica española ");
+        
+    </script>
 </head>
 
 <body>
@@ -36,25 +41,31 @@
     </header>
     <main>
         <img id="wsp_foto" src="./imagenes/wsp.png">
-        <nav>
-            <a href="https://www.recetasderechupete.com/patatas-a-la-riojana-o-guiso-de-patatas-con-chorizo/7094/"
-                target="_blank">Patatas a la riojana</a>
-            <a href="https://www.recetasderechupete.com/patatas-bravas/11181/" target="_blank">Patatas bravas</a>
-            <a href="https://www.paulinacocina.net/pastel-de-papas/15" target="_blank">Pastel de papa</a>
-            <a href="https://www.paulinacocina.net/papas-rellenas/13734" target="_blank">Papas rellenas</a>
+        <nav id="navBar">
+            <div class="navBar-link">
+                <a id="link-1" href="https://www.recetasderechupete.com/patatas-a-la-riojana-o-guiso-de-patatas-con-chorizo/7094/"
+                    target="_blank">Patatas a la riojana</a>
+                <a id="link-2" href="https://www.recetasderechupete.com/patatas-bravas/11181/" target="_blank">Patatas bravas</a>
+                <a id="link-3" href="https://www.paulinacocina.net/pastel-de-papas/15" target="_blank">Pastel de papa</a>
+                <a id="link-4" href="https://www.paulinacocina.net/papas-rellenas/13734" target="_blank">Papas rellenas</a>
+            </div>
+            <div class="nav-button">
+                <button id="button-vn" onclick="cambiarColor()">VISIÓN NOCTURNA</button>
+            </div>
+
         </nav>
-        <section class="section-celular">
+        <section id="fondo-1" class="sections section-celular">
             <div class="section-celular-conteiner">
-                <h3>Sugerencia</h3>
+                <h3 id="subtitulo-1">Sugerencia</h3>
                 <p>Como detectamos que usted está previsualizando esta página desde un dispositivo movil, le
                     recomendamos activar el posicionamiento horizontal y recostar el celular ya que nuestra página web
                     está diseñada para ofrecer la comodidad de poder realizar la receta sin salir de nuestra sitio, con
                     video incluido</p>
             </div>
         </section>
-        <section class="section-tutorial">
+        <section id="fondo-2" class="sections section-tutorial">
             <div>
-                <h3><u>Cómo hacer una tortilla de papas española paso a paso</u></h3>
+                <h3 id="subtitulo-2"><u>Cómo hacer una tortilla de papas española paso a paso</u></h3>
                 <ol>
                     <li style="margin-bottom: 10px;">Cortar las papas en rodajas finas, estilo papas españolas. Deben
                         ser de
@@ -146,18 +157,18 @@
                 </ol>
             </div>
         </section>
-        <section class="section-video">
+        <section id="fondo-3" class="sections section-video">
             <div>
-                <h3><u>Procedimiento para elaborar la receta:</u></h3>
+                <h3 id="subtitulo-3"><u>Procedimiento para elaborar la receta:</u></h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zfdzfDGc-1k"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
         </section>
-        <section class="section-mapa">
+        <section id="fondo-4" class="sections section-mapa">
             <div class="section-mapa-contenedor">
-                <h3><u>Ubicación geografica del origen culinario de la receta:</u></h3>
+                <h3 id="subtitulo-4"><u>Ubicación geografica del origen culinario de la receta:</u></h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166438.961637493!2d-8.337915885592688!3d39.192323443776814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd15ca44ad812d97%3A0x10463fd8c9fc830!2sExtremadura%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1683566343160!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -175,7 +186,7 @@
                         española original es la que lleva cebolla, huevo y papas.</p>
                 </div>
                 <div>
-                    <h3><u>Los ingredientes que vamos a utilizar son:</u></h3>
+                    <h3 id="subtitulo-5"><u>Los ingredientes que vamos a utilizar son:</u></h3>
                     <ul>
                         <li><i>4 Huevos</i></li>
                         <li><i>3 papas medianas</i></li>
@@ -191,48 +202,58 @@
                 </div>
             </div>
         </aside>
-        <section class="section-recetas">
-            <h3>Otras recetas españoles que recomendamos</h3>
+        <section id="fondo-5" class="sections section-recetas">
+            <h3 id="subtitulo-6">Otras recetas españoles que recomendamos</h3>
             <div class="row justify-content-around">
                 <div class="card col-lg-2 col-md-5 col-sm-12 mb-4">
                     <img src="./imagenes/pizza.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Pizza española</h5>
-                      <p class="card-text">La pizza española es la clásica pizza de chorizo, pero a la cuál se le añaden también unos pimientos, del tipo que más guste al chef, para que tenga un sabor un poco más picante.</p>
-                      <a href="https://unareceta.com/pizza-espanola/" class="btn btn-primary" target="_blank">Link de la receta</a>
-                    </div>
-                  </div>
-                  
-                
-                <div class="card col-lg-2 col-md-5 col-sm-12 mb-4" >
-                    <img src="./imagenes/toro.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Receta de rabo de toro a la sevillana</h5>
-                      <p class="card-text">El rabo de toro a la sevillana forma parte de los platos tradicionales de la comida española, un manjar que se puede disfrutar en cualquier época del año, pero que es más común comerlo cuando entra el invierno.</p>
-                      <a href="https://unareceta.com/rabo-de-toro-a-la-sevillana/" class="btn btn-primary" target="_blank">Link de la receta</a>
+                        <h5 class="card-title">Pizza española</h5>
+                        <p class="card-text">La pizza española es la clásica pizza de chorizo, pero a la cuál se le
+                            añaden también unos pimientos, del tipo que más guste al chef, para que tenga un sabor un
+                            poco más picante.</p>
+                        <a href="https://unareceta.com/pizza-espanola/" class="btn btn-primary" target="_blank">Link de
+                            la receta</a>
                     </div>
                 </div>
-                
+
+
+                <div class="card col-lg-2 col-md-5 col-sm-12 mb-4">
+                    <img src="./imagenes/toro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Receta de rabo de toro a la sevillana</h5>
+                        <p class="card-text">El rabo de toro a la sevillana forma parte de los platos tradicionales de
+                            la comida española, un manjar que se puede disfrutar en cualquier época del año, pero que es
+                            más común comerlo cuando entra el invierno.</p>
+                        <a href="https://unareceta.com/rabo-de-toro-a-la-sevillana/" class="btn btn-primary"
+                            target="_blank">Link de la receta</a>
+                    </div>
+                </div>
+
                 <div class="card col-lg-2 col-md-5 col-sm-12 mb-4">
                     <img src="./imagenes/sopa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Receta de sopa de tomate andaluza</h5>
-                      <p class="card-text">Uno de sus platos más clásicos y populares: la sopa de tomate andaluza.</p>
-                      <a href="https://unareceta.com/sopa-de-tomate-andaluza/" class="btn btn-primary" target="_blank">Link de la receta</a>
+                        <h5 class="card-title">Receta de sopa de tomate andaluza</h5>
+                        <p class="card-text">Uno de sus platos más clásicos y populares: la sopa de tomate andaluza.</p>
+                        <a href="https://unareceta.com/sopa-de-tomate-andaluza/" class="btn btn-primary"
+                            target="_blank">Link de la receta</a>
                     </div>
                 </div>
-                
+
                 <div class="card col-lg-2 col-md-5 col-sm-12 mb-4">
                     <img src="./imagenes/merluza.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Receta de merluza a la vasca con gambas y almejas</h5>
-                      <p class="card-text">Esta receta de merluza a la vasca con gambas y almejas es todo lo que necesitas para pasar un rato agradable en la cocina, preparar un delicioso pescado en salsa</p>
-                      <a href="https://unareceta.com/merluza-a-la-vasca-con-gambas-y-almejas/" class="btn btn-primary" target="_blank">Link de la receta</a>
+                        <h5 class="card-title">Receta de merluza a la vasca con gambas y almejas</h5>
+                        <p class="card-text">Esta receta de merluza a la vasca con gambas y almejas es todo lo que
+                            necesitas para pasar un rato agradable en la cocina, preparar un delicioso pescado en salsa
+                        </p>
+                        <a href="https://unareceta.com/merluza-a-la-vasca-con-gambas-y-almejas/" class="btn btn-primary"
+                            target="_blank">Link de la receta</a>
                     </div>
                 </div>
             </div>
         </section>
-        
+
     </main>
     <footer>
         <div class="contenedor-footer">
@@ -256,11 +277,16 @@
                     dedico al desarrollo web hace aproximadamente un año, aprendiendo constantemente de las nuevas
                     tecnologías que ofrece el mundo IT y aprendiendo todos los días nuevas herramientas y métodos para
                     avanzar con mi conocimiento como programador front-end.</p>
+                <button onclick="infoPersonal()">Información personal</button>
             </div>
 
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -8,7 +8,8 @@ body {
 }
 
 h3 {
-    color: rgb(221, 134, 134);
+    color: rgb(138, 138, 193);
+    margin-bottom: 2rem;
 }
 
 p {
@@ -46,7 +47,8 @@ nav {
     text-align: center;
     font-family: "roboto";
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -55,6 +57,27 @@ nav a {
     margin: 0 20px;
     color: #fff;
     flex-wrap: wrap;
+}
+
+.nav-button {
+    display: flex;
+}
+
+nav button {
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    border: 3px solid rgb(89, 49, 49);
+    color: #ffffff;
+    font-family: "roboto";
+}
+
+.navBar-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    place-content: center;
 }
 
 section {
@@ -156,6 +179,7 @@ aside {
 }
 
 footer {
+    border-top: 3px solid #fff;
     background-color: rgb(61, 58, 58);
     padding: 30px;
     margin: 0 30px;
@@ -248,11 +272,18 @@ footer h2 {
     font-family: roboto;
     width: 50%;
     text-align: left;
+    color: rgb(223, 222, 224);
 }
 
 
 .footer-parrafo span {
-    color: #fff;
+    color: rgb(138, 138, 193);
+}
+
+.footer-parrafo button {
+    border: solid 1px #000 ;
+    color: #000;
+    background-color: rgb(138, 138, 193);
 }
 
 
